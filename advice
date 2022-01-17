@@ -1,0 +1,4 @@
+#! /bin/awk -f
+BEGIN { print "Don't panic!"}
+echo 'Ehm, \"hi\", he \\ said' | '{$1=""; print "\"", $0, "\""}'
+
